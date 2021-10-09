@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+
+    <title>Trabajo Integrador 1</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+
+        <nav class="navbar navbar-expand navbar-dark px-5" style=" background-color:  #353A40;">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">
+                    <!-- <img src="./img/codoacodo.png" alt="" class="d-inline-block align-text-middle " height="75"> -->
+                    Conf Bs As
+                </a>
+
+                <div class="d-flex ">
+
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#"> La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="">Conviértete en orador</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="" style="color: #2AA346;">Comprar tickets</a>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+
+            </div>
+        </nav>
+
+    </header>
+    <main class="container w-50">
+
+        <!-- Sujetos -->
+        <section>
+
+            <div class="card-group row-cols-sm-3">
+                <div class="card mx-1 border">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Estudiante</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
+                        <p class="card-text"></p>
+
+                    </div>
+                </div>
+                <div class="card mx-1 border">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Trainee</h5>
+                        <p class="card-text">Tienen un descuento</p>
+
+                    </div>
+                </div>
+                <div class="card mx-1 border">
+
+                    <div class="card-body">
+
+
+                        <h5 class="card-title">Junior</h5>
+                        <p class="card-text">Tienen un descuento</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Venta       -->
+
+        <section class="container mt-2">
+            <div class="container">
+                <h7 class="d-flex justify-content-center text-uppercase">Venta</h7>
+                <h1 class="d-flex justify-content-center">Valor de Ticket $200</h1>
+
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido">
+                    </div>
+                    <div class="mt-2">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
+                    </div>
+                    <div class="container-fluid row">
+                        <div class="col-6">
+                            <label class="form-label">Cantidad</label>
+                            <input type="text" class="form-control" placeholder="Cantidad">
+                        </div>
+
+                        <div class="col-6">
+                            <label class="form-label">Categoria</label>
+                            <select class="form-select" aria-label="Default select example">
+
+                                <option selected>Estudiante</option>
+                                <option value="1">Trainee</option>
+                                <option value="2">Junior</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <button class="btn container-fluid text-white mt-3" type="submit"
+                        style="background-color: #96C93E;">Borrar</button>
+                    <button class="btn container-fluid text-white mt-3" type="submit"
+                        style="background-color: #96C93E;">Resumen</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+
+        <nav class=" navbar navbar-expand bg-dark bg-gradient mt-3 justify-content-center">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item ">
+                    <a class="nav-link text-white p-4" href="#">Preguntas <br> frecuentes </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white p-4" href="#">Contáctanos </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white p-4" href="#">Prensa </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white p-4" href="#">Conferencias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white p-4" href="#">Términos y <br> condiciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white p-4" href="#">Privacidad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white p-4" href="#">Estudiantes</a>
+                </li>
+            </ul>
+        </nav>
+
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
