@@ -51,38 +51,40 @@
         </nav>
 
     </header>
-    <main class="container w-50">
+    <main class="container w-75">
 
         <!-- Sujetos -->
         <section>
 
-            <div class="card-group row-cols-sm-3">
-                <div class="card mx-1 border">
-
-                    <div class="card-body">
-
-                        <h5 class="card-title">Estudiante</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
-                        <p class="card-text"></p>
-
+            <div class="row row-cols-1 row-cols-lg-3 g-3 mt-4">
+                <div class="col">
+                    <div class="card border-primary text-center ">
+                        <div class="card-body">
+                            <h5 class="card-title">Estudiante</h5>
+                            <p class="card-text">Tienen un descuento</p>
+                            <p class="card-text">80%</p>
+                            <h6 class="card-subtitle mb-2 text-muted">* presentar documentación</h6>
+                        </div>
                     </div>
                 </div>
-                <div class="card mx-1 border">
-
-                    <div class="card-body">
-
-                        <h5 class="card-title">Trainee</h5>
-                        <p class="card-text">Tienen un descuento</p>
-
+                <div class="col">
+                    <div class="card border-success text-center ">
+                        <div class="card-body">
+                            <h5 class="card-title">Trainee</h5>
+                            <p class="card-text">Tienen un descuento</p>
+                            <p class="card-text">50%</p>
+                            <h6 class="card-subtitle mb-2 text-muted">* presentar documentación</h6>
+                        </div>
                     </div>
                 </div>
-                <div class="card mx-1 border">
-
-                    <div class="card-body">
-
-
-                        <h5 class="card-title">Junior</h5>
-                        <p class="card-text">Tienen un descuento</p>
+                <div class="col">
+                    <div class="card border-warning text-center ">
+                        <div class="card-body">
+                            <h5 class="card-title">Junior</h5>
+                            <p class="card-text">Tienen un descuento</p>
+                            <p class="card-text">15%</p>
+                            <h6 class="card-subtitle mb-2 text-muted">* presentar documentación</h6>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,27 +95,30 @@
         <section class="container mt-2">
             <div class="container">
                 <h7 class="d-flex justify-content-center text-uppercase">Venta</h7>
-                <h1 class="d-flex justify-content-center">Valor de Ticket $200</h1>
-
+                <h1 class="d-flex justify-content-center">VALOR DE TICKET $200</h1>
             </div>
+
             <form>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Nombre">
+                <div class="flex-row">
+                    <div class="d-flex">
+                        <div class="pe-1 col-6">
+                            <input type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="ps-1 col-6">
+                            <input type="text" class="form-control" placeholder="Apellido">
+                        </div>
                     </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Apellido">
-                    </div>
-                    <div class="mt-2">
+                    <div class="mt-2 d-flex">
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
                     </div>
-                    <div class="container-fluid row">
-                        <div class="col-6">
+
+                    <div class="d-flex mt-3">
+                        <div class="col-6 pe-1">
                             <label class="form-label">Cantidad</label>
                             <input type="text" class="form-control" placeholder="Cantidad">
                         </div>
 
-                        <div class="col-6">
+                        <div class="col-6 ps-1">
                             <label class="form-label">Categoria</label>
                             <select class="form-select" aria-label="Default select example">
 
@@ -124,10 +129,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex">
-                    <button class="btn container-fluid text-white mt-3" type="submit"
+                <div class="d-flex mt-3 bg-info">
+                    <p>Total a Pagar: $</p>
+                </div>
+                <div class="d-flex pt-3">
+                    <button class="btn col-6 text-white  me-2" type="submit"
                         style="background-color: #96C93E;">Borrar</button>
-                    <button class="btn container-fluid text-white mt-3" type="submit"
+                    <button class="btn col-6 text-white ps-2" type="submit"
                         style="background-color: #96C93E;">Resumen</button>
                 </div>
             </form>
